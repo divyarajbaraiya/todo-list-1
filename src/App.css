@@ -2,37 +2,117 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+.App-header .navbar {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background-color: #dabcce;
+}
+
+.App-header .hamburger-icon {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 15px;
+  background-color: #ad1a72;
+  width: 24px;
+  height: 4px;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header .hamburger-icon:before {
+  background-color: #ad1a72;
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 24px;
+  height: 4px;
+}
+.App-header .hamburger-icon:after {
+  background-color: #ad1a72;
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 24px;
+  height: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-header .user-profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-header .user-profile-container .separator {
+  background-color: #ad1a72;
+  width: 33px;
+  height: 0px;
+  border: 1px solid #ad1a72;
+  transform: rotate(90deg);
+}
+
+.App-header .user-profile-container .user-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-header .user-profile-container .user-profile .icon {
+  display: flex;
+  height: 24px;
+  width: 24px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.App-header .user-profile-container .user-profile .name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ad1a72;
+}
+
+.App-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.App-main .input-placeholder {
+  background: #f2f2f2;
+  border-radius: 6px;
+  display: inline-block;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.App-main .input-placeholder-content {
+  display: flex;
+}
+
+.App-main input {
+  border: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.App-main input:focus {
+  outline: 0;
 }
