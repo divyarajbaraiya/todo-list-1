@@ -39,6 +39,12 @@ function App() {
             <img src="../images/Vector-search.png" alt="Img 2" />
           </span>
         </div>
+
+        <div className="action-buttons">
+          <button>Create Template</button>
+
+          <button>Search Discovery</button>
+        </div>
       </main>
     </div>
   );
