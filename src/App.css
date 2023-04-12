@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .App-header {
@@ -36,6 +41,7 @@
   width: 24px;
   height: 4px;
 }
+
 .App-header .hamburger-icon:after {
   background-color: #ad1a72;
   content: "";
@@ -53,7 +59,7 @@
 
 .App-header .user-profile-container .separator {
   background-color: #ad1a72;
-  width: 33px;
+  width: 30px;
   height: 0px;
   border: 1px solid #ad1a72;
   transform: rotate(90deg);
@@ -75,9 +81,6 @@
 }
 
 .App-header .user-profile-container .user-profile .name {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #ad1a72;
@@ -115,8 +118,15 @@
   -o-appearance: none;
   appearance: none;
 }
+
 .App-main input:focus {
   outline: 0;
+}
+
+.App-main .action-items {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .App-main .action-buttons {
@@ -126,10 +136,173 @@
 
 .App-main .action-buttons button {
   background-color: #333333;
-  color: #FFFFFF;
-  justify-content: center;
-  align-items: center;
+  color: #ffffff;
   padding: 10px 14px;
   box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
+}
+
+.App-main .action-buttons button .button-icon {
+  margin-right: 6px;
+}
+
+.App-main .select-input {
+  border-radius: 21px;
+  outline: none;
+  border: none;
+  width: 140px;
+  height: 29px;
+  padding: 6px 14px;
+  background: #ffffff;
+  border-radius: 21px;
+}
+
+.App-main .table-content {
+  border: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.App-main .table-content thead {
+  color: #333333;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  /* gap: 220px; */
+}
+
+.App-main .table-content tbody tr {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  /* gap: 180px; */
+  height: 64px;
+  background: #ffffff;
+  border-radius: 8px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4f4f4f;
+}
+
+.App-main .pill-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.App-main .pill {
+  padding: 4px 8px;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  height: 20px;
+}
+
+.App-main .pill-1 {
+  background-color: #e3b7d1;
+  color: #ad1a72;
+}
+.App-main .pill-2 {
+  background-color: #d6cfe0;
+  color: #6940a5;
+}
+.App-main .pill-3 {
+  background-color: #3d948730;
+  color: #3d9487;
+}
+.App-main .pill-4 {
+  background-color: #3a89ab30;
+  color: #0b6e99;
+}
+.App-main .pill-5 {
+  background-color: #f2c94c20;
+  color: #dfab01;
+}
+.App-main .pill-6 {
+  background-color: #d9730d30;
+  color: #d9730d;
+}
+
+.App-main .assessment-type {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  display: flex;
+  gap: 10px;
+}
+
+.App-main .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.App-main .dots-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4px;
+  height: 4px;
+  background: #d9d9d9;
+  position: relative;
+  margin: 25px;
+}
+
+.App-main .dots-icon:before {
+  background-color: #d9d9d9;
+  content: "";
+  position: absolute;
+  left: -10px;
+  width: 4px;
+  height: 4px;
+}
+
+.App-main .dots-icon:after {
+  background-color: #d9d9d9;
+  content: "";
+  position: absolute;
+  right: 20px;
+  width: 4px;
+  height: 4px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 1;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4f4f4f;
+  width: 117px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  color: #4f4f4f;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dots-icon {
+  background-color: #3e8e41;
 }
